@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <style>
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+            width: 100%;
+                  }
+            }
+           <!-- The code above is for the media query test-->
+           
+            h1{
+                font-size:18px;
+            }
+            
+            section{
+                padding-top:25px;
+                padding-bottom:25px;
+            }
+            .flex-container{
+                display:flex;
+                justify-content:center;
+            }
+
+            .flex-container > div {
+              background-color: #FFAA1D;
+              width:95px;
+              margin:100px;
+              text-align:center;
+              line-height: 30px;
+              font-size: 17px; 
+            }
+
+            body{
+                font-family:"Optima", sans-serif;
+                       
+            }
+            
+            #buy-online{
+                background-color:#191970;
+            }
+
+            #header-img {
+                width:150px;
+                position:fixed;
+                top:0;
+                left:0;   
+            }
+
+            
+            #title {
+                color:#191970;
+                font-family:Snell Roundhand, cursive;
+                font-size: 65px;  
+                
+            }
+            
+            .nav-link{
+                color:#191970;
+                padding:20px;
+                margin:20px;
+                
+            }
+            
+            #nav-bar{
+                position:fixed;
+                top:0;
+                left:0;
+                width:100%;
+                overflow: hidden;
+            }
+         
+        </style>
+
+    </head>
+
+    <body>
+
+        <header id="header">
+            <img id="header-img" src="https://media.sweetwater.com/api/i/q-82__ha-5a6d078ca99b4ee0__hmac-4a66a4c98ac35631286d4713ddc0d0122d2485b0/images/items/750/VinylGID-large.jpg">   
+            <center>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#product-preview"><b>Product Preview</b></a>
+                <a class="nav-link" href="#request-coupon"><b>Request Coupon</b></a>
+                <a class="nav-link" href="#buy-online"><b>Buy Online</b></a>
+            </nav> 
+            </center>
+        </header>
+
+        <section id="product-preview">
+            <center>
+            <h1 id="title"><b>Vintage Vinyl Records.</b></h1>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0h_jAZQvHB8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </section>
+
+        <section id="request-coupon">
+            <center>
+                <h1>Request a Coupon: </h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" placeholder="Email Here" name="email"></input>
+                <input type="submit" id="submit">
+            </form>
+            </center>
+        </section>
+
+        <section id="buy-online">
+            <div class="flex-container">
+                <div><a href="amazon-affiliate-link"><b>Amazon</b></a></div>
+                <div><a href="eBay-affiliate-link"><b>eBay</b></a></div>
+                <div><a href="BestBuy-affiliate-link"><b>Best Buy</b></a></div>
+              </div>
+        </section> 
+
+    </body>
+    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+    
+    
+</html>
